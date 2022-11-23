@@ -39,6 +39,10 @@ footer, header, hgroup, menu, nav, section {
     background-color: var(--black);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: inherit;
 	line-height: 1;
@@ -69,12 +73,21 @@ nav h1 {
     font-size: 1.5rem;
 }
 
+li > a {
+    font-size: .75rem;
+    color: var(--grey);
+}
+
+li:hover {
+    transform: scale(1.2);
+}
+
 span {
     color: var(--red);
 }
 
 nav p {
-    font-size: .75rem;
+    font-size: .8rem;
     color: var(--grey);
     padding: 0;
 }
@@ -91,6 +104,11 @@ ul {
 
 li {
     font-size: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .1em;
 }
 
 li > p:first-child, nav > div > h1 {
@@ -98,8 +116,8 @@ li > p:first-child, nav > div > h1 {
 }
 
 img {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
 }
 
 header {
@@ -143,7 +161,7 @@ h2:after {
     margin-left: 10px
 }
 
-.about p {
+#about p {
     padding: 1em 1.5em;
     color: var(--white);
 }
@@ -174,7 +192,7 @@ svg {
     width: 50px;
 }
 
-main p, .contact p {
+main p, #contact p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0em 1.2em;
     color: var(--grey);
@@ -220,7 +238,7 @@ a p {
     color: var(--white);
 }
 
-.projects p:last-child {
+#projects p:last-child {
     color: var(--grey);
     font-size: .75rem;
     width: 100%;
@@ -236,15 +254,15 @@ a p {
     margin: 0 !important;
 }
 
-.projects img {
+#projects img {
     height: auto;
     width: 90%;
     border-radius: 15px;
 }
 
 .buttoncontainer img {
-    height: 1.75em;
-    width: 1.75em;
+    height: 1.75em !important;
+    width: 1.75em !important;
 }
 
 .buttoncontainer a img {
@@ -267,15 +285,15 @@ a p {
     transform: scale(1.1);
 }
 
-.contact p, .contact > div > a {
+#contact p, #contact > div > a {
     font-size: 1.25rem;
 }
 
-.contact > div > div p {
+#contact > div > div p {
     margin-bottom: .5em;
 }
 
-.contact > div > a {
+#contact > div > a {
     display: block;
     padding: .5em 1.2em;
     display: flex;
@@ -283,13 +301,13 @@ a p {
     gap: .5em;
 }
 
-.contact > div > a > p {
+#contact > div > a > p {
     color: var(--white);
     padding: 0;
     padding-bottom: 5px;
 }
 
-.contact img {
+#contact img {
     height: 1.25em;
     width: 1.25em;
 }
@@ -306,4 +324,12 @@ footer {
 a > p {
     padding-bottom: 5px;
     border-bottom: 1px solid var(--white);
+}
+
+a:visited, a:active, a:focus, a {
+    text-decoration: none;
+}
+
+a {
+    color: var(--grey);
 }

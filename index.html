@@ -13,26 +13,26 @@
 </head>
 <body>
     <nav>
-        <div>
+        <div name="top">
             <h1><span>Sam</span> Heseltine</h1>
             <p>Web Developer</p>
         </div>
         <ul>
             <li>
                 <img src="./media/home-dm.png">
-                <p>Home</p>
+                <a href="#top">Home</a>
             </li>
             <li>
                 <img src="./media/about-dm.png">
-                <p>About</p>
-            </li>
-            <li>
-                <img src="./media/contact-dm.png">
-                <p>Contact</p>
+                <a href="#about">About</a>
             </li>
             <li>
                 <img src="./media/projects-dm.png">
-                <p>Projects</p>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <img src="./media/contact-dm.png">
+                <a href="#contact">Contact</a>
             </li>
         </ul>
     </nav>
@@ -40,8 +40,8 @@
         <h1><span>Hello!</span> <br>I'm Sam</h1>
     </header>
     <main>
-        <section class="about">
-            <h2>About Me</h2>
+        <section id="about">
+            <h2 name>About Me</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt dolor a metus semper euismod. Nunc purus sapien, pellentesque vel nisi eget, 
                 fringilla blandit libero. Donec vel orci imperdiet, eleifend eros sed, condimentum lorem. Aliquam nunc nisi, interdum in turpis eget, commodo congue 
@@ -113,7 +113,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section id="projects">
             <h2>Projects</h2>
             <div>
                 <h3>Battleship</h3>
@@ -129,11 +129,11 @@
                 <h4>Technologies</h4>
                 <p>Built with Jest</p>
                 <div class="buttoncontainer">
-                    <a>
+                    <a href="https://sth21.github.io/battleship/" target="_blank">
                         <p>Live Preview</p>
                         <img src="./media/arrow-dm.png">
                     </a>
-                    <a>
+                    <a href="https://github.com/sth21/battleship" target="_blank">
                         <p>View Code</p>
                         <img src="./media/arrow-dm.png">
                     </a>
@@ -153,11 +153,11 @@
                 <h4>Technologies</h4>
                 <p>Built with the OpenWeatherMap API</p>
                 <div class="buttoncontainer">
-                    <a>
+                    <a href="https://sth21.github.io/weatherapp/" target="_blank">
                         <p>Live Preview</p>
                         <img src="./media/arrow-dm.png">
                     </a>
-                    <a>
+                    <a href="https://github.com/sth21/weatherapp" target="_blank">
                         <p>View Code</p>
                         <img src="./media/arrow-dm.png">
                     </a>
@@ -177,18 +177,18 @@
                 <h4>Technologies</h4>
                 <p>Built with Factory Functions and IIFEs</p>
                 <div class="buttoncontainer">
-                    <a>
+                    <a href="https://sth21.github.io/odin-todo/" target="_blank">
                         <p>Live Preview</p>
                         <img src="./media/arrow-dm.png">
                     </a>
-                    <a>
+                    <a href="https://github.com/sth21/odin-todo" target="_blank">
                         <p>View Code</p>
                         <img src="./media/arrow-dm.png">
                     </a>
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact">
             <h2>Contact Me</h2>
             <div>
                 <div>
@@ -198,11 +198,11 @@
                         fringilla blandit libero.
                     </p>
                 </div>
-                <a>
+                <a href="mailto: stheseltine@outlook.com">
                     <p>Send me a message</p>
                     <img src="./media/email-dm.png">
                 </a>
-                <a>
+                <a href="https://github.com/sth21" target="_blank">
                     <p>Check out my GitHub profile</p>
                     <img src="./media/github-dm.png">
                 </a>
@@ -210,7 +210,7 @@
         </section>
     </main>
     <footer>
-        <a>View site code</a>
+        <a href="https://github.com/sth21/portfolio">View site code</a>
     </footer>
 </body>
 </html>
