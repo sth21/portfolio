@@ -1,0 +1,309 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+:root {
+    --black: #101010;
+    --white: #fff;
+    --grey: #a0a0a0;
+    --red: #ec5800;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: 1px;
+    min-height: 100vh;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+body {
+    min-height: inherit;
+	line-height: 1;
+    position: relative;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+nav {
+    position: sticky;
+    background-color: var(--black);
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav > div {
+    margin-right: auto;
+    padding: 1.5em 1em;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+}
+
+span {
+    color: var(--red);
+}
+
+nav p {
+    font-size: .75rem;
+    color: var(--grey);
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: clamp(.5em, 1em, 1.5em);
+    font-size: clamp(.5rem, 1rem, 1.5rem);
+    padding: 1em;
+}
+
+li {
+    font-size: inherit;
+}
+
+li > p:first-child, nav > div > h1 {
+    margin-bottom: 1px;
+}
+
+img {
+    height: 15px;
+    width: 15px;
+}
+
+header {
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+header p {
+    color: var(--grey);
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    padding: 1em;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+h2:before, h2:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+h2:before {
+    margin-right: 10px
+}
+
+h2:after {
+    margin-left: 10px
+}
+
+.about p {
+    padding: 1em 1.5em;
+    color: var(--white);
+}
+
+.skills {
+    display: grid;
+    gap: .5em;
+    grid-template: 2fr / repeat(5, 1fr);
+    padding: 1em;
+    row-gap: 1em;
+}
+
+.skills > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills > div > p {
+    font-size: 1rem;
+    padding: .5em;
+    color: var(--white);
+}
+
+svg {
+    height: 50px;
+    width: 50px;
+}
+
+main p, .contact p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0em 1.2em;
+    color: var(--grey);
+}
+
+main h3 {
+    font-size: 1.75rem;
+    padding: .85em;
+    padding-bottom: .5em;
+    padding-top: 1em;
+}
+
+h3 + p {
+    color: var(--grey);
+    font-size: 1rem;
+    padding: 0em 1.5em;
+}
+
+h4 {
+    font-size: 1.5rem;
+    padding: 1em;
+}
+
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 2em 1em;
+}
+
+.buttoncontainer a {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: .75em;
+}
+
+a p {
+    padding: 0;
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+.projects p:last-child {
+    color: var(--grey);
+    font-size: .75rem;
+    width: 100%;
+    text-align: left;
+}
+
+.imgcontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0em !important;
+    margin: 0 !important;
+}
+
+.projects img {
+    height: auto;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.buttoncontainer img {
+    height: 1.75em;
+    width: 1.75em;
+}
+
+.buttoncontainer a img {
+    transition: transform .25s;
+    transform: rotate(-45deg);
+}
+
+.buttoncontainer a:hover img {
+    transition: transform .25s;
+    transform: rotate(0deg);
+}
+
+.buttoncontainer a p {
+    transition: transform .25s;
+    transform: scale(1);
+}
+
+.buttoncontainer a:hover p {
+    transition: transform .25s;
+    transform: scale(1.1);
+}
+
+.contact p, .contact > div > a {
+    font-size: 1.25rem;
+}
+
+.contact > div > div p {
+    margin-bottom: .5em;
+}
+
+.contact > div > a {
+    display: block;
+    padding: .5em 1.2em;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.contact > div > a > p {
+    color: var(--white);
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+.contact img {
+    height: 1.25em;
+    width: 1.25em;
+}
+
+footer {
+    padding: 1em;
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    font-size: .75rem;
+    color: var(--grey);
+}
+
+a > p {
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--white);
+}
