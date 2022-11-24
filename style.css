@@ -56,6 +56,7 @@ ol, ul {
 nav {
     position: sticky;
     background-color: var(--black);
+    z-index: 1;
     top: 0;
     width: 100%;
     display: flex;
@@ -401,6 +402,89 @@ a {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
+    .desktop-wrapper {
+        width: 80%;
+        margin: auto;
+    }
 
+    nav {
+        width: 100vw;
+    }
+
+    nav h1 {
+        font-size: 2.5rem;
+    }
+
+    nav p {
+        font-size: 1.25rem;
+    }
+
+    ul, [name="top"] {
+        padding: 2em 4em;
+    }
+
+    li > a {
+        font-size: 1.25rem;
+    }
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+
+    ul {
+        gap: 4em;
+    }
+
+    header h1 {
+        font-size: 8rem;
+    }
+
+    .skills {
+        width: 80%;
+        margin: auto;
+        gap: 2em;
+    }
+
+    svg {
+        height: 100px;
+        width: 100px;
+    }
+
+    .skills > div > p {
+        font-size: 1.5rem;
+    }
+
+    main h3 {
+        font-size: 2.75rem;
+    }
+
+    h3 + p {
+        font-size: 1.5rem;
+    }
+
+    #projects img {
+        width: 70%;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    main p {
+        font-size: 1.75rem;
+    }
+
+    .buttoncontainer {
+        padding: 3em 1em;
+    }
+
+    #contact p, #contact > div > a  {
+        font-size: 2rem;
+    }
+
+    a {
+        font-size: 1.25rem;
+    }
 }
