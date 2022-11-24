@@ -333,3 +333,74 @@ a:visited, a:active, a:focus, a {
 a {
     color: var(--grey);
 }
+
+@media (min-width: 600px) {
+    nav h1 {
+        font-size: 2rem;
+    }
+
+    nav p {
+        font-size: 1rem;
+    }
+
+    li > a {
+        font-size: 1rem;
+    }
+
+    img {
+        height: 30px;
+        width: 30px;
+    }
+
+    ul {
+        gap: 2em;
+    }
+
+    header h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .skills {
+        gap: 1em;
+    }
+
+    main h3 {
+        font-size: 2.25rem;
+    }
+
+    h3 + p {
+        font-size: 1.275rem;
+    }
+
+    h4 {
+        font-size: 1.75rem;
+    }
+
+    .buttoncontainer a {
+        width: 25%;
+    }
+
+    a p {
+        font-size: 1.5rem;
+    }
+
+    #contact p {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1000px) {
+
+}
